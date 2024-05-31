@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Slots</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Slots.css">
+</head>
+<body>
+  <h1 class="h1" style="color:black;">BOOK YOUR SLOTS HERE </h1>
+  <form>
+      <div >
+        <label for="dur">Duration: </label>
+        <input type="number" placeholder="Enter the hours" id="num1">
+        <button class="price" onmouseover="multiply()">PRICE</button>
+        <p id="myid">
+        </p>
+      </div>
+    <br>
+  </form>
+  
+<div class="container">
+     <div class="items"><div class="nested-item"> Ashram Road </div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     <div class="items"><div class="nested-item">Bapunagar </div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     <div class="items"><div class="nested-item">C G Road</div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     <div class="items"><div class="nested-item">Ellis Bridge </div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     <div class="items"><div class="nested-item">Motera</div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     <div class="items"><div class="nested-item"> Maninagar</div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     <div class="items"><div class="nested-item"> Navrangpura </div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     <div class="items"><div class="nested-item">Sabarmati</div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     <div class="items"><div class="nested-item">Satellite  </div><button class="but"><a href="Register.html">Book Slot</a></button></div>
+     
+</div>
+<script> 
+  function multiply() {
+      var a = document.getElementById("num1").value;
+     //  var b = document.getElementById("num2").value;
+      var price  =  parseInt(a) * 20 ;
+     document.getElementById("myid").innerHTML = ( price + " Rs") 
+  }
+ </script>
+  
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+    background-image: url(mainpage3.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+   
+}
+.cover{
+    width: 100%;
+    height: 180vh;
+    background-color: #1a512e;
+    background-image: linear-gradient(314deg, #1a512e 0%, #63a91f 70%);
+    opacity: 0.96;  
+}
+
+#Owner {
+    margin-top: 20px;
+    font-family:'Poppins',sans-serif ;
+    font-size: 17px;
+    font-weight: bold;
+    width: 500px;   
+}
+#Car{
+    margin-top: 20px;
+    font-family:'Poppins',sans-serif ;
+    font-size: 17px;
+    font-weight: bold;
+    width: 300px;
+}
+#LicensePlate{
+    margin-top: 20px;
+    font-family:'Poppins',sans-serif ;
+    font-size: 17px;
+    font-weight: bold;
+    width: 500px;
+}
+#Entrydate{
+    margin-top: 20px;
+    font-family:'Poppins',sans-serif ;
+    font-size: 17px;
+    font-weight: bold;
+    width: 300px;
+
+}
+.exit{
+    font-size: 35px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    float: right;
+    margin-top: -55px;
+}
+#Exitdate{
+    font-family:'Poppins',sans-serif ;
+    font-size: 17px;
+    font-weight: bold;
+    width: 300px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+.input {
+    margin: 30px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 10px;
+    
+}
+
+#entry{
+    width: 190px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Poppins',sans-serif;
+    margin-top: 50px;
+    margin-left: 500px;
+    border-color: #ffffff;
+    border-width: 0.35mm;
+    background-color: transparent;
+    color: white;
+}
+#entry:hover{
+    background-color: #ffffff;
+    color: black;
+}
+table{
+    font-family: 'Poppins',sans-serif;
+    width: 70%;
+    margin: 50px auto ;
+    background-color:transparent;
+    margin-top: 30px;
+}
+table, th, td{
+    border: 0.35mm solid #ffffff;
+    padding: 2px;
+}
+th{
+    font-size: 20px;
+}
+td{
+    font-size: 20px;
+}

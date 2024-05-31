@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="cover">
+     <div style="color:#ffffff;font-size: 25px;font-family:'Poppins',sans-serif; text-align: center;font-weight: bolder;"><h1>ADD VEHICLE TO PARKING LOT</h1></div>
+    <!-- code to get multiple info of the car -->
+    <div id="Container">
+        <div  class="input" >Owner : <input id="Owner" type="text"  placeholder=" Name of owner " ></div>
+        <div  class="input" style="margin-left: px;">Vehicle type :   <input id="Car" type="text" placeholder="2/4 Wheeler"></div>
+        <div  class="input" style="margin-right: 67px;">License Plate :  <input id="LicensePlate" type="text" placeholder="NN-NN-LL,NN-LL-NN,...etc"></div>
+        <div  class="input" style="margin-right: 64px;">Entry date : <input id="Entrydate" type="date" placeholder="Date of entry"></div>
+        <div  class="exit"  style="margin-right: 52px;">Exit date : <input id="Exitdate" type="date" placeholder="Date of leaving"></div>
+        
+        <button id="entry">Add Vehicle </button>
+    </div>
+    <br><br><br>
+    <div class="input"><ins><h3 style="text-align: center; margin-top: -20px;">List Of Vehicle in Parking Lot</h3></ins> </div>
+    
+    <table id="display">
+        <tr>
+            <th>Owner</th>
+            <th>Vehicle Type</th>
+            <th>License</th>
+            <th>Entry Date</th>
+            <th>Exit Date</th>
+        </tr>
+    </table>
+
+    <script>
+        var row = 1;
+        var entry = document.getElementById("entry")
+        entry.addEventListener("click",displaydetails);
+        function displaydetails() {
+            var Owner = document.getElementById("Owner").value;
+            var Car = document.getElementById("Car").value;
+            var LicensePlate = document.getElementById("LicensePlate").value;
+            var Entrydate = document.getElementById("Entrydate").value;
+            var Exitdate = document.getElementById("Exitdate").value;
+            if(!Owner || !Car || !LicensePlate || !Entrydate || !Exitdate) {
+                alert("Please check you haven't filled all the details!");
+                return;
+            }
+        var display = document.getElementById("display");
+        var newRow  = display.insertRow(row);
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+        var cell4 = newRow.insertCell(3);
+        var cell5 = newRow.insertCell(4);
+
+        cell1.innerHTML = Owner;
+        cell2.innerHTML = Car;
+        cell3.innerHTML = LicensePlate;
+        cell4.innerHTML = Entrydate;
+        cell5.innerHTML = Exitdate;
+         
+        row++;
+        }
+    </script>
+    </div>
+</body>
+</html>
